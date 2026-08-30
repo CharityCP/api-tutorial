@@ -11,6 +11,32 @@
 "height":375},
 {"id":"MTk4MTAxOQ",
 	"url":"https://s3.us-west-2.amazonaws.com/cdn2.thecatapi.com/images/MTk4MTAxOQ.jpg",
+
 "width":612,"height":612}]
 
+
+
+API JavaScript
+
+const vocabularyButtons = document.querySelectorAll(".vocab-btn");
+
+	vocabularyButtons.forEach(button => {
+	
+	button.addEventListener("click", () => {
+	
+	if
+	(button.Classlist.contains("flipped"))
+	{
+			button.textContent =
+			button.dataset.word;
+			
+			button.classList.remove("flipped");
+	} else {
+			button.textContent=
+			button.dataset.definition;
+			
+			button.classList.add("flipped");
+	}
+	});
+	});
 
