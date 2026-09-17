@@ -1,230 +1,222 @@
-<DOCTYPE HTML>
-	<html>
-		<head>
-			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-			<link rel="stylesheet" href="css/container.css">
-			<link rel="stylesheet" href="css/card.css">
-			<link rel="stylesheet" href="css/style.css">
-			
-		</head>
-		<header>
-			<button type="button" class="btn btn-outline-info vocab-btn" data-word = "API" data-definition= "A set of rules that allows different software appliccations to communicate".> API </button>
-			<button type="button" class="btn btn-outline-info vocab-btn">API Client</button>
-			<button type="button" class="btn btn-outline-info vocab-btn">JSON</button>
-			<button type="button" class="btn btn-outline-info vocab-btn">Endpoint</button>
-			<button type="button" class="btn btn-outline-info vocab-btn">GET</button>
-			<button type="button" class="btn btn-outline-info vocab-btn">Parameter</button>
-			<button type="button" class="btn btn-outline-info vocab-btn">Response</button>
-			<button type="button" class="btn btn-outline-info vocab-btn">Authentication</button>
-		</header>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/container.css">
+		<link rel="stylesheet" href="css/card.css">
+		<link rel="stylesheet" href="css/style.css">
 		
-		<body>
-			<main>
-				<div class="card"><h1> API- Exploration</h1>
-					<h2 class ="card"h2> Step 1 — The URL is the request</h2>
-				</div>
-				<main class= "container">
-					<section class="card">
-						<img src="images/raw-json.png" alt="The dog.ceo response as one unbroken line of raw text">
-						<img src="images/pretty-json.png" alt="The same response laid out on separate lines by the browser's JSON viewer">
-						<p><b>I observed the code in a straight path all jammed together. Not as legible.<br> When I hit pretty print  the code formatted properly.<b></p>
-							<pre><code>{
-								"message": "https://images.dog.ceo/breeds/hound-afghan/n02088094_2062.jpg",
-								"status": "success"
-							}</code>It came back with the image of a hound dog.<br> He looked very friendly.</pre>
-						</section> 
-						<h3> Field Notes: Exploring the API Browser</h3>
-						<ul>
-							<li> Used an API address to retrieve images directly in the browser</li>
-							<li> Observed that the API returned different responses each time I made a request</li>
-							<li>Retrieved various images of cats and dogs</li>
-							<li>Compared the regular response with the Pretty Print option.</li>
-							<li>Noticed that pretty print made the response easier to read and understand</li>
-							<li>Learned that APIs can return dynamic content and that the response can be viewed and inspected directly in a browser.</li>
-							<li>This activity heled me become more comfortable recognizing what an API response looks like.</li>
-						</ul>
-						</main>
-						
-						
-						<div class="card-group">
-							<div class="card2"> <h1> Postman and API Ninjas</h1>
-								<h2> Step 2-Exploration<br> Reveals What the browsers hiding?</h2>
-								<main class= "container1">
+	</head>
+	<header>
+		<button type="button" class="btn btn-outline-info vocab-btn" data-word = "API" data-definition= "A set of rules that allows different software appliccations to communicate".> API </button>
+		<button type="button" class="btn btn-outline-info vocab-btn">API Client</button>
+		<button type="button" class="btn btn-outline-info vocab-btn">JSON</button>
+		<button type="button" class="btn btn-outline-info vocab-btn">Endpoint</button>
+		<button type="button" class="btn btn-outline-info vocab-btn">GET</button>
+		<button type="button" class="btn btn-outline-info vocab-btn">Parameter</button>
+		<button type="button" class="btn btn-outline-info vocab-btn">Response</button>
+		<button type="button" class="btn btn-outline-info vocab-btn">Authentication</button>
+	</header>
+	
+	<body>
+		<main>
+			<div class="card"><h1> API- Exploration</h1>
+				<h2 class ="card"h2> Step 1 — The URL is the request</h2>
+			</div>
+			<main class= "container">
+				<section class="card">
+					<img src="images/raw-json.png" alt="The dog.ceo response as one unbroken line of raw text">
+					<img src="images/pretty-json.png" alt="The same response laid out on separate lines by the browser's JSON viewer">
+					<p><b>I observed the code in a straight path all jammed together. Not as legible.<br> When I hit pretty print  the code formatted properly.<b></p>
+						<pre><code>{
+							"message": "https://images.dog.ceo/breeds/hound-afghan/n02088094_2062.jpg",
+							"status": "success"
+						}</code>It came back with the image of a hound dog.<br> He looked very friendly.</pre>
+					</section> 
+					<h3> Field Notes: Exploring the API Browser</h3>
+					<ul>
+						<li> Used an API address to retrieve images directly in the browser</li>
+						<li> Observed that the API returned different responses each time I made a request</li>
+						<li>Retrieved various images of cats and dogs</li>
+						<li>Compared the regular response with the Pretty Print option.</li>
+						<li>Noticed that pretty print made the response easier to read and understand</li>
+						<li>Learned that APIs can return dynamic content and that the response can be viewed and inspected directly in a browser.</li>
+						<li>This activity heled me become more comfortable recognizing what an API response looks like.</li>
+					</ul>
+					</main>
+					
+					
+					<div class="card-group">
+						<div class="card2"> <h1> Postman and API Ninjas</h1>
+							<h2> Step 2-Exploration<br> Reveals What the browsers hiding?</h2>
+							<main class= "container1">
+								
+								<div class="card-body">
+									<h2 class="card-title">Postman</h2>
+									<p class="card-text" ><b>I played around with the postman program.<br> It allows us to test sites and view the backend info I used the dog request page to inspect.<br> It's a really useful tool for site inspection..<b></p>	
+										<p><b>The responses are detailed. You can inspect the network, code, and visuals in the program.<br> It is going to be a useful tool in my Web Development career.<b></p>
+											<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+										</div>
+										<img src="images/myDog-json.png" alt="The dog Postman response">
+										</div>
+									</main>
 									
-									<div class="card-body">
-										<h2 class="card-title">Postman</h2>
-										<p class="card-text" ><b>I played around with the postman program.<br> It allows us to test sites and view the backend info I used the dog request page to inspect.<br> It's a really useful tool for site inspection..<b></p>	
-											<p><b>The responses are detailed. You can inspect the network, code, and visuals in the program.<br> It is going to be a useful tool in my Web Development career.<b></p>
+									
+									<div class="card3">
+										
+										<main class= "container2">
+											<div class="card-body">
+												<h2 class="card-title">API Ninjas</h2>
+												<p class="card-text">This program is very helpful in that it allows you to .</p>
 												<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
 											</div>
-											<img src="images/myDog-json.png" alt="The dog Postman response">
-											</div>
-										</main>
-										
-										
-										<div class="card3">
-											
-											<main class= "container2">
-												<div class="card-body">
-													<h2 class="card-title">API Ninjas</h2>
-													<p class="card-text">This program is very helpful in that it allows you to .</p>
-													<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-												</div>
-												<img src="images/celebrityAPI-json.png" alt="The API Nija response">
-												<h2> Field Notes: Exploring an API with API Ninjas and Postman</h2>
-												<h3>Objective</h3>
-												<p> The goal of this exercise ,was to become more comfortable working with external API, understanding how an API key is used for authentication, and learning how Postman can simplify repeated API requests.</p>
-												<h3> What I practiced</h3>
-												<ol>
-													<li> Assessing API Documentation</li>
-													<p> I explored <b> API Ninjas<b> and looked through several of the available API sources/endpoints. This helped me seehow an API can provide
-													access to information without requiring me to build or maintain the underlying data myself.</p>
-													<p> A useful first step when working with an unfamiliar API to identify </p> 
-													<ul>
-														<li>What information the API provides</li>
-														<li> What endpoint provides the informaion I need</li>
-														<li> What HTTP method is required </li>
-													<li> What parameters the endpoint accepts</li></p>
-													
-													<li> How authentication works</li>
-													<li> What the expected response looks like</li>													</ul>
-													<li> Working with an API key</li>
-													<p> I sucessfully used an API key to make requests to API Ninjas.</p>
-													<p> The API key acts as a credential that allows the API provider to identify and authorize my requests. This was an important practical lesson because an API request is not always simply a matter of knowing URL. The request may also require authentication information.</P>
-													<p> <b> Teaching Inference<b></p>
-														<p> Think of an API key to a building. The endpoint is the room I want to  enter,while the API key demonstrates that I have permission to enter the building.</p>
-														<li> Using Postman</li>
-														<p> I used Postman to experiment with API requests.</p>
-														<p> Postman was helpful because it allowed me to construct and send requests without having to immediately write application code I could see the request and response directly, which made it easier to understand what was happening.</p>
-														<p> I was able to successfully retrieve information from seveeral API sources. </p>
-														<li> Creating a Variable for API</li>
-														<p>One of the most useful things I learned was how to store my API key as a<b> Postman variable<b></p>
-															<p>Instead of manually entering the API key every time I made a request, I could reference the variable in my requests.</p>
-															<p> This changes the work flow</p>
-															<p> Manually enter API key-send request-repeat</p>
-															<p>to:</p>
-															<p> Store the key once-reference the variablreuse it across requests</p>
-															<P> This is a small change, but it makes API testing much more efficient</p>
-														</ol>
-														
-														
-														</div>
-													</main>
+											<img src="images/celebrityAPI-json.png" alt="The API Nija response">
+											<h2> Field Notes: Exploring an API with API Ninjas and Postman</h2>
+											<h3>Objective</h3>
+											<p> The goal of this exercise ,was to become more comfortable working with external API, understanding how an API key is used for authentication, and learning how Postman can simplify repeated API requests.</p>
+											<h3> What I practiced</h3>
+											<ol>
+												<li> Assessing API Documentation</li>
+												<p> I explored <b> API Ninjas<b> and looked through several of the available API sources/endpoints. This helped me seehow an API can provide
+												access to information without requiring me to build or maintain the underlying data myself.</p>
+												<p> A useful first step when working with an unfamiliar API to identify </p> 
+												<ul>
+													<li>What information the API provides</li>
+													<li> What endpoint provides the informaion I need</li>
+													<li> What HTTP method is required </li>
+												<li> What parameters the endpoint accepts</li></p>
+												
+												<li> How authentication works</li>
+												<li> What the expected response looks like</li>													</ul>
+												<li> Working with an API key</li>
+												<p> I sucessfully used an API key to make requests to API Ninjas.</p>
+												<p> The API key acts as a credential that allows the API provider to identify and authorize my requests. This was an important practical lesson because an API request is not always simply a matter of knowing URL. The request may also require authentication information.</P>
+												<p> <b> Teaching Inference<b></p>
+													<p> Think of an API key to a building. The endpoint is the room I want to  enter,while the API key demonstrates that I have permission to enter the building.</p>
+													<li> Using Postman</li>
+													<p> I used Postman to experiment with API requests.</p>
+													<p> Postman was helpful because it allowed me to construct and send requests without having to immediately write application code I could see the request and response directly, which made it easier to understand what was happening.</p>
+													<p> I was able to successfully retrieve information from seveeral API sources. </p>
+													<li> Creating a Variable for API</li>
+													<p>One of the most useful things I learned was how to store my API key as a<b> Postman variable<b></p>
+														<p>Instead of manually entering the API key every time I made a request, I could reference the variable in my requests.</p>
+														<p> This changes the work flow</p>
+														<p> Manually enter API key-send request-repeat</p>
+														<p>to:</p>
+														<p> Store the key once-reference the variablreuse it across requests</p>
+														<P> This is a small change, but it makes API testing much more efficient</p>
+													</ol>
 													
 													
-													<div class="card4"> <h1> One Record in, One line out</h1>
-														<h2> Step 3-The Error <br> Debugging</h2>
-														
-														
-														<main class= "container3">
-															<div class="card-group">
-																<div class="card4">
+													</div>
+												</main>
+												
+												
+												<div class="card4"> <h1> One Record in, One line out</h1>
+													<h2> Step 3-The Error <br> Debugging</h2>
+													
+													
+													<main class= "container3">
+														<div class="card-group">
+															<div class="card4">
+																
+																<div class="card-body">
+																	<h5 class="card-title">Open Data in the Terminal</h5>
 																	
-																	<div class="card-body">
-																		<h5 class="card-title">Open Data in the Terminal</h5>
-																		
-																		<p class="card-text">In this step, I attempted to open the terminal using JavaScript. I had some difficulty geting the program to work because I was unsure about the file paths and what the expected output should look like. After looking t my folder structure, I understood that describe.js is inside the scripts folder while data.json should be in the main project folder. I learned that the program needs to read the JSON file and print one of its records to the terminal.</p>
-																		<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-																		
-																		<img src="images/terminalData.png" alt="Terminal error">
-																		
-																		<pre> <code> </code>
-																			<h2> Field Notes: Opening Data in the Terminal</h2>
-																			<h3> Date August 29, 2026<br> Activity: reading data.json using JavaScript/Bun in the terminal</h3>
-																			<ul>
-																				<li>I started looking at the project folder structure for my api-tutorial project.</li>
-																				<li>I confirmed that I had a sripts folder created/opened the describe.js file inside it.</li>
-																				<li>At first, I was unsure what code belonged in describe.js , so it was empty</li>
-																				<li>I tried running the program with node scripts/describe.js, but the terminal returned "node:command not found." </li>
-																				<li>But I realized I needed to use the bun program</li>
-																				<li>I am in the process of understanding how to get the terminal to print. </li>
-																				<li>The expected result is in the image above. </li>
-																				<li> With assistance I realized that the code in the describe.js would fecth the information in the data.json<.li>
-																					<li>I understand that the JSON files stores that data, while, the Java/script file tells the comouter what to do with the data.</li>
-																					<li> I also learned that file names, folder locations, and the command used to run a program are important when working in the terminal. </li>
-																					
-																					
-																					
-																				</ul>
-																				</div>
-																			</div>
-																		</main>
-																		
-																		<main>
-																			
-																			<main class= "container4">
-																				<div class="card5">
-																					
-																					<div class="card-body">
-																						<h5 class="card-title">Real Response</h5>
-																						<p class="card-text">I eventually got the terminal to retun a real response. This lesson is definitiely more difficult than I was used to. I am glad I overcame the challenges I faced this week.</p>
-																						<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-																						<pre> <code> <img src="images/bunScripts.png" alt="The bun response"></code>
-																							
-																						</div>
-																					</div>
-																				</main>
+																	<p class="card-text">In this step, I attempted to open the terminal using JavaScript. I had some difficulty geting the program to work because I was unsure about the file paths and what the expected output should look like. After looking t my folder structure, I understood that describe.js is inside the scripts folder while data.json should be in the main project folder. I learned that the program needs to read the JSON file and print one of its records to the terminal.</p>
+																	<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+																	
+																	<img src="images/terminalData.png" alt="Terminal error">
+																	
+																	<pre> <code> </code>
+																		<h2> Field Notes: Opening Data in the Terminal</h2>
+																		<h3> Date August 29, 2026<br> Activity: reading data.json using JavaScript/Bun in the terminal</h3>
+																		<ul>
+																			<li>I started looking at the project folder structure for my api-tutorial project.</li>
+																			<li>I confirmed that I had a sripts folder created/opened the describe.js file inside it.</li>
+																			<li>At first, I was unsure what code belonged in describe.js , so it was empty</li>
+																			<li>I tried running the program with node scripts/describe.js, but the terminal returned "node:command not found." </li>
+																			<li>But I realized I needed to use the bun program</li>
+																			<li>I am in the process of understanding how to get the terminal to print. </li>
+																			<li>The expected result is in the image above. </li>
+																			<li> With assistance I realized that the code in the describe.js would fecth the information in the data.json<.li>
+																				<li>I understand that the JSON files stores that data, while, the Java/script file tells the comouter what to do with the data.</li>
+																				<li> I also learned that file names, folder locations, and the command used to run a program are important when working in the terminal. </li>
 																				
-																				<div class="card5"> <h1> Return Values</h1>
-																					<h2> Step 4: Printing values VS Returning Values <br> Inspection</h2>
-																					
-																					<main class= "container5">
-																						<div class="card-group">
-																							
-																							<div class="card6">
-																								
-																								<div class="card-body">
-																									<h5 class="card-title">Card title</h5>
-																									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-																									<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-																									<img src="" class="card-img-top" alt="...">
-																								</div>
-																							</div>
-																						</main>
+																				
+																				
+																			</ul>
+																			</div>
+																		</div>
+																	</main>
+																	
+																	<main>
+																		
+																		<main class= "container4">
+																			<div class="card5">
+																				
+																				<div class="card-body">
+																					<h5 class="card-title">Real Response</h5>
+																					<p class="card-text">I eventually got the terminal to retun a real response. This lesson is definitiely more difficult than I was used to. I am glad I overcame the challenges I faced this week.</p>
+																					<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+																					<pre> <code> <img src="images/bunScripts.png" alt="The bun response"></code>
 																						
-																						<main class= "container6">
-																							<div class="card7">
+																					</div>
+																				</div>
+																			</main>
+																			
+																			<div class="card5"> <h1> Return Values</h1>
+																				<h2> Step 4: Printing values VS Returning Values <br> Inspection</h2>
+																				
+																				<main class= "container5">
+																					<div class="card-group">
+																						
+																						<div class="card6">
+																							
+																							<div class="card-body">
+																								<h5 class="card-title">Card title</h5>
+																								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+																								<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+																								<img src="" class="card-img-top" alt="...">
+																							</div>
+																						</div>
+																					</main>
+																					
+																					<main class= "container6">
+																						<div class="card7">
+																							
+																							<div class="card-body">
+																								<h5 class="card-title">Card title</h5>
+																								<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+																								<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
 																								
-																								<div class="card-body">
-																									<h5 class="card-title">Card title</h5>
-																									<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-																									<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-																									<img src="..." class="card-img-top" alt="...">
+																							</div>
+																						</div>
+																					</main>
+																					<div class="card7"> <h1> Process Arrays</h1>
+																						<h2> Step 5: forEach and Map<br> Every Record at once</h2>	
+																						<main class= "container7">
+																							<div class="card-group">
+																								<div class="card8">
 																								</div>
 																							</div>
-																						</main>
-																						<div class="card7"> <h1> Process Arrays</h1>
-																							<h2> Step 5: forEach and Map<br> Every Record at once</h2>	
-																							<main class= "container7">
-																								<div class="card-group">
-																									<div class="card8">
-																										
-																										<div class="card-body">
-																											<h5 class="card-title">Card title</h5>
-																											<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-																											<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-																											<img src="..." class="card-img-top" alt="...">
-																										</div>
-																									</div>
-																								</main>
-																								
-																								<main class= "container8">
-																									<div class="card9">
-																										
-																										<div class="card-body">
-																											<h5 class="card-title">Card title</h5>
-																											<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-																											<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-																											<img src="..." class="card-img-top" alt="...">
-																										</div>
-																									</div>
-																								</main>
-																								<button id= "startover"> Back to the top </button>
-																								
-																								<script src="script.js"> </script>
-																							</body>
+																						</main>																
+																						
+																						<section class="day-three">
+																							<h2> Day 3- Processing API Data </h2>
+																							<p> In this lesson, I learned how JavaScript can process records stored inside of an array. </p>
 																							
-																						</html>																																																																																																																																																																																																		
+																							<button id= "catButton" type= "button">
+																							Display Cat Descriptions </button>
+																							<div id= "catOutput"> </div>
+																						</section>
+																					</main>
+																					<button id= "startover"> Back to the top </button>
+																					<script src="data.js"> </script>
+																					<script src="scripts/describe.js"></script>
+																				</body>
+																				
+																			</html>																																																																																																																																																																																																																																										
